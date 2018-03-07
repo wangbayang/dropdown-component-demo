@@ -1,0 +1,19 @@
+#dropdown {
+  .title {
+    user-select: none;
+    font-size: 14px;
+    &:hover {
+      cursor: pointer;
+    }
+    .default-title-color {
+      color: rgb(64, 158, 255);
+    }
+    .icon {
+      transition: transform .3s;
+      margin-left: 10px;
+    }
+    .angle-rotate {
+      transform: rotate(180deg)
+    }
+  }
+}
