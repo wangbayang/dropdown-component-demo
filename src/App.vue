@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <dropdown :list="list"></dropdown>
+    <dropdown :list="list" divided></dropdown>
   </div>
 </template>
 
@@ -23,8 +23,9 @@
 <style>
   #app {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    height: 95vh;
+    height: 90vh;
+    padding-top: 5vh;
   }
 </style>

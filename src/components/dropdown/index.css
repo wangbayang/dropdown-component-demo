@@ -1,7 +1,11 @@
 #dropdown {
   .title {
+    display: inline-block;
     user-select: none;
     font-size: 14px;
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
     &:hover {
       cursor: pointer;
     }
@@ -14,6 +18,29 @@
     }
     .angle-rotate {
       transform: rotate(180deg)
+    }
+  }
+  .list {
+    user-select: none;
+    position: absolute;
+    margin: 5px 0;
+    border: 1px solid #ebeef5;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    .list-item {
+      padding: 10px 20px;
+      &:hover {
+        cursor: pointer;
+        background: rgb(235, 246, 255);
+        color: rgb(64, 158, 255);
+      }
+    }
+    .show-divide {
+      border-top: 1px solid #eeeeee;
+    }
+    .show-divide:last-child {
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
     }
   }
 }

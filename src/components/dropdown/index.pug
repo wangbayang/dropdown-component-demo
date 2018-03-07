@@ -1,4 +1,8 @@
 #dropdown
   .title(@click="handleTitleClick")
-    span.default-title-color 下拉菜单
+    span.default-title-color {{title}}
     i.fa.fa-angle-down.default-title-color.icon(:class="{ 'angle-rotate': isExpand }")
+  collapse-transition
+    .list(v-show="isExpand")
+      .list-item(v-for="(item, index) in list" :key="index" :class="{ 'show-divide': showDivide }" @click="handleClickItem(item)")
+        span {{item.label}}
