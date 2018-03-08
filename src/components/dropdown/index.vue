@@ -1,3 +1,10 @@
+<!--
+  下拉菜单组件,传入数据说明：
+  list(必传): 菜单列表数据
+  devided(可选): 是否显示分割线
+  示例: <dropdown :list="list" divided></dropdown>
+-->
+
 <script>
   import collapseTransition from './collapse-transition'
 
