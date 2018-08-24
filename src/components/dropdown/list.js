@@ -27,6 +27,10 @@ const list = [
   {
     label: 'test7',
     value: 'value7'
+  },
+  {
+    label: 'test8',
+    value: 'value8'
   }
 ]
 
